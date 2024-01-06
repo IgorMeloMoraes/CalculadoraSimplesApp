@@ -7,71 +7,71 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtNumero1"
+        android:id="@+id/txt_numero_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Número 1"
+        android:text="@string/txt_numero_1"
         android:textSize="20sp"
         android:textStyle="italic"
-        android:textColor="#4CAF50"
+        android:textColor="@color/verde_texto"
         android:padding="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"/>
 
     <EditText
-        android:id="@+id/edtNumero1"
+        android:id="@+id/edt_numero_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/txtNumero1"
+        android:layout_alignBottom="@+id/txt_numero_1"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
-        android:layout_toEndOf="@+id/txtNumero1"
+        android:layout_toEndOf="@+id/txt_numero_1"
         android:ems="10"
         android:padding="16dp"
         android:inputType="numberDecimal"
-        android:hint="Digite um número:" />
+        android:hint="@string/edt_numero" />
 
     <TextView
-        android:id="@+id/txtNumero2"
+        android:id="@+id/txt_numero_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/txtNumero1"
+        android:layout_alignBottom="@+id/txt_numero_1"
         android:layout_alignParentStart="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
         android:layout_marginBottom="-85dp"
         android:padding="16dp"
-        android:text="Número 2"
-        android:textColor="#4CAF50"
+        android:text="@string/txt_numero_2"
+        android:textColor="@color/verde_texto"
         android:textSize="20sp"
         android:textStyle="italic" />
 
     <EditText
-        android:id="@+id/edtNumero2"
+        android:id="@+id/edt_numero_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/txtNumero1"
+        android:layout_alignBottom="@+id/txt_numero_1"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="-81dp"
-        android:layout_toEndOf="@+id/txtNumero1"
+        android:layout_toEndOf="@+id/txt_numero_1"
         android:ems="10"
-        android:hint="Digite um número:"
+        android:hint="@string/edt_numero"
         android:inputType="numberDecimal"
         android:padding="16dp" />
 
     <TextView
-        android:id="@+id/txtResultado"
+        android:id="@+id/txt_resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/txtNumero2"
+        android:layout_alignBottom="@+id/txt_numero_2"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="-125dp"
         android:padding="16dp"
-        android:text="Resultado = "
+        android:text="@string/txt_resultado"
         android:textAlignment="center"
-        android:textColor="#4CAF50"
+        android:textColor="@color/azul_texto"
         android:textSize="20sp"
         android:textStyle="italic" />
 
@@ -80,22 +80,22 @@
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:onClick="soma"
-        android:layout_alignBottom="@id/txtResultado"
+        android:layout_alignBottom="@+id/txt_resultado"
         android:layout_marginBottom="-84dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="16dp"
-        android:text="Adição" />
+        android:text="@string/btn_adicao" />
 
     <Button
         android:id="@+id/btn_subtracao"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:onClick="subtracao"
-        android:layout_alignBottom="@id/txtResultado"
+        android:layout_alignBottom="@+id/txt_resultado"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="-84dp"
         android:layout_toEndOf="@+id/btn_soma"
-        android:text="Subtração" />
+        android:text="@string/btn_sub" />
 
     <Button
         android:id="@+id/btn_multiplicacao"
@@ -106,17 +106,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="-92dp"
-        android:text="Multiplicação" />
+        android:text="@string/btn_mult" />
 
     <Button
         android:id="@+id/btn_divisao"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:onClick="divisao"
-        android:layout_alignBottom="@id/txtResultado"
+        android:layout_alignBottom="@+id/txt_resultado"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="-172dp"
         android:layout_toEndOf="@+id/btn_multiplicacao"
-        android:text="Divisão" />
+        android:text="@string/btn_div" />
 </RelativeLayout>

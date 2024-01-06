@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Variaveis Globais
     TextView txtNum1, txtNum2, txtResultado;
     EditText edtNum1, edtNum2;
     Button btnSoma, btnSub, btnMulti, btnDiv;
@@ -20,21 +21,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Hooks
-        edtNum1 = findViewById(R.id.edtNumero1);
-        edtNum2 = findViewById(R.id.edtNumero2);
-        txtResultado = findViewById(R.id.txtResultado);
+        edtNum1 = findViewById(R.id.edt_numero_1);
+        edtNum2 = findViewById(R.id.edt_numero_2);
+        txtResultado = findViewById(R.id.txt_resultado);
     }
 
+    // Metodos de Operações (Adição, Subtação, Multiplicação, Divisão)
     public void soma(View view){
+        // Faz a comparação dos ids dos botões
         if (view.getId() == R.id.btn_soma){
 
+            // Cria duas variaveis para armazenar os valores dentro dos objetos
             double num1, num2;
             num1 = Double.parseDouble(edtNum1.getText().toString());
             num2 = Double.parseDouble(edtNum2.getText().toString());
 
+            // Variavel e calculo da operação
             double somar;
             somar = num1 + num2;
 
+            // Output da operação
             txtResultado.setText("Resultado da soma = " + somar);
         }
     }

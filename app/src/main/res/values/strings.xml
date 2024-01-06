@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CalculadoraSimplesApp</string>
+    <string name="txt_numero_1">Número 1</string>
+    <string name="txt_numero_2">Número 2</string>
+    <string name="edt_numero">Digite um Número:</string>
+    <string name="txt_resultado">Resultado = </string>
+    <string name="btn_adicao">Adição</string>
+    <string name="btn_sub">Subtração</string>
+    <string name="btn_mult">Multiplicação</string>
+    <string name="btn_div">Divisão</string>
+
 </resources>
